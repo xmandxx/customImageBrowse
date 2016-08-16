@@ -19,12 +19,12 @@
 		04713F1E1D61AF4E000EA826 /* ZoomScaleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04713F1C1D61AF4E000EA826 /* ZoomScaleScrollView.m */; };
 		04713F221D61B010000EA826 /* SZTwoActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04713F211D61B010000EA826 /* SZTwoActionSheetView.m */; };
 		04713F251D61B049000EA826 /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04713F241D61B049000EA826 /* CustomAlertView.m */; };
-		04713F2A1D61B184000EA826 /* UIColor+HTMLColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 04713F291D61B184000EA826 /* UIColor+HTMLColors.m */; };
-		04713F2E1D61B49E000EA826 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04713F2D1D61B49E000EA826 /* ImageViewController.m */; };
 		04713F331D61B5A6000EA826 /* 003.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04713F2F1D61B5A6000EA826 /* 003.jpg */; };
 		04713F341D61B5A6000EA826 /* 101.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04713F301D61B5A6000EA826 /* 101.jpg */; };
 		04713F351D61B5A6000EA826 /* 102.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04713F311D61B5A6000EA826 /* 102.jpg */; };
 		04713F361D61B5A6000EA826 /* 808.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04713F321D61B5A6000EA826 /* 808.jpg */; };
+		049059371D62C12800DD9DEE /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049059341D62C12800DD9DEE /* ImageViewController.m */; };
+		049059381D62C12800DD9DEE /* UIColor+HTMLColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 049059361D62C12800DD9DEE /* UIColor+HTMLColors.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,15 +69,15 @@
 		04713F211D61B010000EA826 /* SZTwoActionSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZTwoActionSheetView.m; sourceTree = "<group>"; };
 		04713F231D61B049000EA826 /* CustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAlertView.h; sourceTree = "<group>"; };
 		04713F241D61B049000EA826 /* CustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAlertView.m; sourceTree = "<group>"; };
-		04713F281D61B184000EA826 /* UIColor+HTMLColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HTMLColors.h"; sourceTree = "<group>"; };
-		04713F291D61B184000EA826 /* UIColor+HTMLColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HTMLColors.m"; sourceTree = "<group>"; };
 		04713F2B1D61B1C2000EA826 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		04713F2C1D61B49E000EA826 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageViewController.h; path = "Color Extensions/ImageViewController.h"; sourceTree = "<group>"; };
-		04713F2D1D61B49E000EA826 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageViewController.m; path = "Color Extensions/ImageViewController.m"; sourceTree = "<group>"; };
 		04713F2F1D61B5A6000EA826 /* 003.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 003.jpg; sourceTree = "<group>"; };
 		04713F301D61B5A6000EA826 /* 101.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 101.jpg; sourceTree = "<group>"; };
 		04713F311D61B5A6000EA826 /* 102.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 102.jpg; sourceTree = "<group>"; };
 		04713F321D61B5A6000EA826 /* 808.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 808.jpg; sourceTree = "<group>"; };
+		049059331D62C12800DD9DEE /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		049059341D62C12800DD9DEE /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		049059351D62C12800DD9DEE /* UIColor+HTMLColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HTMLColors.h"; sourceTree = "<group>"; };
+		049059361D62C12800DD9DEE /* UIColor+HTMLColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HTMLColors.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,13 +128,10 @@
 		04713EE51D61AF3A000EA826 /* ShowImageViews */ = {
 			isa = PBXGroup;
 			children = (
-				04713F271D61B184000EA826 /* Color Extensions */,
 				04713EE91D61AF3A000EA826 /* AppDelegate.h */,
 				04713EEA1D61AF3A000EA826 /* AppDelegate.m */,
 				04713EEC1D61AF3B000EA826 /* ViewController.h */,
 				04713EED1D61AF3B000EA826 /* ViewController.m */,
-				04713F2C1D61B49E000EA826 /* ImageViewController.h */,
-				04713F2D1D61B49E000EA826 /* ImageViewController.m */,
 				04713F191D61AF4E000EA826 /* TAFullScreenViewController.h */,
 				04713F1A1D61AF4E000EA826 /* TAFullScreenViewController.m */,
 				04713F201D61B010000EA826 /* SZTwoActionSheetView.h */,
@@ -143,6 +140,10 @@
 				04713F1C1D61AF4E000EA826 /* ZoomScaleScrollView.m */,
 				04713F231D61B049000EA826 /* CustomAlertView.h */,
 				04713F241D61B049000EA826 /* CustomAlertView.m */,
+				049059331D62C12800DD9DEE /* ImageViewController.h */,
+				049059341D62C12800DD9DEE /* ImageViewController.m */,
+				049059351D62C12800DD9DEE /* UIColor+HTMLColors.h */,
+				049059361D62C12800DD9DEE /* UIColor+HTMLColors.m */,
 				04713F2F1D61B5A6000EA826 /* 003.jpg */,
 				04713F301D61B5A6000EA826 /* 101.jpg */,
 				04713F311D61B5A6000EA826 /* 102.jpg */,
@@ -181,15 +182,6 @@
 				04713F0D1D61AF3B000EA826 /* Info.plist */,
 			);
 			path = ShowImageViewsUITests;
-			sourceTree = "<group>";
-		};
-		04713F271D61B184000EA826 /* Color Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				04713F281D61B184000EA826 /* UIColor+HTMLColors.h */,
-				04713F291D61B184000EA826 /* UIColor+HTMLColors.m */,
-			);
-			path = "Color Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,12 +320,12 @@
 			files = (
 				04713F221D61B010000EA826 /* SZTwoActionSheetView.m in Sources */,
 				04713EEE1D61AF3B000EA826 /* ViewController.m in Sources */,
+				049059371D62C12800DD9DEE /* ImageViewController.m in Sources */,
 				04713EEB1D61AF3A000EA826 /* AppDelegate.m in Sources */,
 				04713F1E1D61AF4E000EA826 /* ZoomScaleScrollView.m in Sources */,
 				04713F1D1D61AF4E000EA826 /* TAFullScreenViewController.m in Sources */,
 				04713F251D61B049000EA826 /* CustomAlertView.m in Sources */,
-				04713F2E1D61B49E000EA826 /* ImageViewController.m in Sources */,
-				04713F2A1D61B184000EA826 /* UIColor+HTMLColors.m in Sources */,
+				049059381D62C12800DD9DEE /* UIColor+HTMLColors.m in Sources */,
 				04713EE81D61AF3A000EA826 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -562,6 +554,7 @@
 				04713F121D61AF3B000EA826 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04713F131D61AF3B000EA826 /* Build configuration list for PBXNativeTarget "ShowImageViewsTests" */ = {
 			isa = XCConfigurationList;
@@ -570,6 +563,7 @@
 				04713F151D61AF3B000EA826 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04713F161D61AF3B000EA826 /* Build configuration list for PBXNativeTarget "ShowImageViewsUITests" */ = {
 			isa = XCConfigurationList;
@@ -578,6 +572,7 @@
 				04713F181D61AF3B000EA826 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
