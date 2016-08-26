@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
    s.name        = "showImage"
-  s.version      = "0.0.1"
+  s.version      = "1.0.1"
   s.summary      = "showImage."
   s.description  = <<-DESC
                full show image and zoom scale images
@@ -10,10 +10,10 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "jeffery" => "sujie@servyou.com.cn" }
   s.platform     = :ios
-  s.source       = { :git => "https://github.com/mynameissujie/customImageBrowse.git", :tag => "0.0.1" }
-  s.resources = "ShowImageViews", "ShowImageViews/**/*.jpg"
-  s.source_files  = "ShowImageViews", "ShowImageViews/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source       = { :git => "https://github.com/mynameissujie/customImageBrowse.git", :tag => "1.0.1" }
+  s.resources = "ShowImageViews/Image/*.jpg","ShowImageViews/Image/*.png"
+  s.source_files  =  "ShowImageViews/ImageBrower/*"
+
   s.framework  = "UIKit"
   s.requires_arc = true
 

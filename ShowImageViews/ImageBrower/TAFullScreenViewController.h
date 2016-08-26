@@ -14,6 +14,8 @@ typedef void(^returnIndexBlock)(NSInteger index);/**<返回下标block*/
 
 @property(nonatomic,strong)NSMutableArray* thumbArray;/**<图片数组*/
 
+@property (nonatomic,strong)NSMutableArray * imageUrlArray;/**<图片地址数字*/
+
 
 @property (nonatomic)NSInteger currentI;/**<当前下标*/
 

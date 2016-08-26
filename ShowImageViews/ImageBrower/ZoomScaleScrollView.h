@@ -22,6 +22,8 @@
 
 @property (nonatomic,strong)UIImage *scaleImage;
 
+@property (nonatomic,strong)NSString *imageUrl;
+
 @property (nonatomic,assign)BOOL canDownLoad;
 
 @property (nonatomic,weak)id <ZoomScaleDelegate> zoomDelegate;

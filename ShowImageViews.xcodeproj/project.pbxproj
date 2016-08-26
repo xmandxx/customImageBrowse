@@ -15,16 +15,20 @@
 		04713EF61D61AF3B000EA826 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04713EF41D61AF3B000EA826 /* LaunchScreen.storyboard */; };
 		04713F011D61AF3B000EA826 /* ShowImageViewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04713F001D61AF3B000EA826 /* ShowImageViewsTests.m */; };
 		04713F0C1D61AF3B000EA826 /* ShowImageViewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04713F0B1D61AF3B000EA826 /* ShowImageViewsUITests.m */; };
-		04713F1D1D61AF4E000EA826 /* TAFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04713F1A1D61AF4E000EA826 /* TAFullScreenViewController.m */; };
-		04713F1E1D61AF4E000EA826 /* ZoomScaleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04713F1C1D61AF4E000EA826 /* ZoomScaleScrollView.m */; };
-		04713F221D61B010000EA826 /* SZTwoActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04713F211D61B010000EA826 /* SZTwoActionSheetView.m */; };
-		04713F251D61B049000EA826 /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04713F241D61B049000EA826 /* CustomAlertView.m */; };
-		04713F331D61B5A6000EA826 /* 003.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04713F2F1D61B5A6000EA826 /* 003.jpg */; };
-		04713F341D61B5A6000EA826 /* 101.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04713F301D61B5A6000EA826 /* 101.jpg */; };
-		04713F351D61B5A6000EA826 /* 102.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04713F311D61B5A6000EA826 /* 102.jpg */; };
-		04713F361D61B5A6000EA826 /* 808.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04713F321D61B5A6000EA826 /* 808.jpg */; };
 		049059371D62C12800DD9DEE /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049059341D62C12800DD9DEE /* ImageViewController.m */; };
-		049059381D62C12800DD9DEE /* UIColor+HTMLColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 049059361D62C12800DD9DEE /* UIColor+HTMLColors.m */; };
+		7B717F4D1D70095E00B70F14 /* 003.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B717F451D70095E00B70F14 /* 003.jpg */; };
+		7B717F4E1D70095E00B70F14 /* 101.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B717F461D70095E00B70F14 /* 101.jpg */; };
+		7B717F4F1D70095E00B70F14 /* 102.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B717F471D70095E00B70F14 /* 102.jpg */; };
+		7B717F501D70095E00B70F14 /* 808.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B717F481D70095E00B70F14 /* 808.jpg */; };
+		7B717F511D70095E00B70F14 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B717F491D70095E00B70F14 /* back@2x.png */; };
+		7B717F521D70095E00B70F14 /* back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B717F4A1D70095E00B70F14 /* back@3x.png */; };
+		7B717F531D70095E00B70F14 /* delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B717F4B1D70095E00B70F14 /* delete@2x.png */; };
+		7B717F541D70095E00B70F14 /* delete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B717F4C1D70095E00B70F14 /* delete@3x.png */; };
+		7B717F601D7009C100B70F14 /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B717F571D7009C100B70F14 /* CustomAlertView.m */; };
+		7B717F621D7009C100B70F14 /* TAFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B717F5B1D7009C100B70F14 /* TAFullScreenViewController.m */; };
+		7B717F631D7009C100B70F14 /* UIColor+HTMLColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B717F5D1D7009C100B70F14 /* UIColor+HTMLColors.m */; };
+		7B717F641D7009C100B70F14 /* ZoomScaleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B717F5F1D7009C100B70F14 /* ZoomScaleScrollView.m */; };
+		7B717F681D700CBD00B70F14 /* CustomActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B717F671D700CBD00B70F14 /* CustomActionSheetView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,23 +65,27 @@
 		04713F071D61AF3B000EA826 /* ShowImageViewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShowImageViewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04713F0B1D61AF3B000EA826 /* ShowImageViewsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowImageViewsUITests.m; sourceTree = "<group>"; };
 		04713F0D1D61AF3B000EA826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04713F191D61AF4E000EA826 /* TAFullScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAFullScreenViewController.h; sourceTree = "<group>"; };
-		04713F1A1D61AF4E000EA826 /* TAFullScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAFullScreenViewController.m; sourceTree = "<group>"; };
-		04713F1B1D61AF4E000EA826 /* ZoomScaleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomScaleScrollView.h; sourceTree = "<group>"; };
-		04713F1C1D61AF4E000EA826 /* ZoomScaleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomScaleScrollView.m; sourceTree = "<group>"; };
-		04713F201D61B010000EA826 /* SZTwoActionSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZTwoActionSheetView.h; sourceTree = "<group>"; };
-		04713F211D61B010000EA826 /* SZTwoActionSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZTwoActionSheetView.m; sourceTree = "<group>"; };
-		04713F231D61B049000EA826 /* CustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAlertView.h; sourceTree = "<group>"; };
-		04713F241D61B049000EA826 /* CustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAlertView.m; sourceTree = "<group>"; };
 		04713F2B1D61B1C2000EA826 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		04713F2F1D61B5A6000EA826 /* 003.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 003.jpg; sourceTree = "<group>"; };
-		04713F301D61B5A6000EA826 /* 101.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 101.jpg; sourceTree = "<group>"; };
-		04713F311D61B5A6000EA826 /* 102.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 102.jpg; sourceTree = "<group>"; };
-		04713F321D61B5A6000EA826 /* 808.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 808.jpg; sourceTree = "<group>"; };
 		049059331D62C12800DD9DEE /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		049059341D62C12800DD9DEE /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
-		049059351D62C12800DD9DEE /* UIColor+HTMLColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HTMLColors.h"; sourceTree = "<group>"; };
-		049059361D62C12800DD9DEE /* UIColor+HTMLColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HTMLColors.m"; sourceTree = "<group>"; };
+		7B717F451D70095E00B70F14 /* 003.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 003.jpg; sourceTree = "<group>"; };
+		7B717F461D70095E00B70F14 /* 101.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 101.jpg; sourceTree = "<group>"; };
+		7B717F471D70095E00B70F14 /* 102.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 102.jpg; sourceTree = "<group>"; };
+		7B717F481D70095E00B70F14 /* 808.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 808.jpg; sourceTree = "<group>"; };
+		7B717F491D70095E00B70F14 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		7B717F4A1D70095E00B70F14 /* back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@3x.png"; sourceTree = "<group>"; };
+		7B717F4B1D70095E00B70F14 /* delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete@2x.png"; sourceTree = "<group>"; };
+		7B717F4C1D70095E00B70F14 /* delete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete@3x.png"; sourceTree = "<group>"; };
+		7B717F561D7009C100B70F14 /* CustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAlertView.h; sourceTree = "<group>"; };
+		7B717F571D7009C100B70F14 /* CustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAlertView.m; sourceTree = "<group>"; };
+		7B717F5A1D7009C100B70F14 /* TAFullScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAFullScreenViewController.h; sourceTree = "<group>"; };
+		7B717F5B1D7009C100B70F14 /* TAFullScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAFullScreenViewController.m; sourceTree = "<group>"; };
+		7B717F5C1D7009C100B70F14 /* UIColor+HTMLColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HTMLColors.h"; sourceTree = "<group>"; };
+		7B717F5D1D7009C100B70F14 /* UIColor+HTMLColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HTMLColors.m"; sourceTree = "<group>"; };
+		7B717F5E1D7009C100B70F14 /* ZoomScaleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomScaleScrollView.h; sourceTree = "<group>"; };
+		7B717F5F1D7009C100B70F14 /* ZoomScaleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomScaleScrollView.m; sourceTree = "<group>"; };
+		7B717F661D700CBD00B70F14 /* CustomActionSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomActionSheetView.h; sourceTree = "<group>"; };
+		7B717F671D700CBD00B70F14 /* CustomActionSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomActionSheetView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,26 +136,14 @@
 		04713EE51D61AF3A000EA826 /* ShowImageViews */ = {
 			isa = PBXGroup;
 			children = (
+				7B717F551D7009C100B70F14 /* ImageBrower */,
+				7B717F441D70095E00B70F14 /* Image */,
 				04713EE91D61AF3A000EA826 /* AppDelegate.h */,
 				04713EEA1D61AF3A000EA826 /* AppDelegate.m */,
 				04713EEC1D61AF3B000EA826 /* ViewController.h */,
 				04713EED1D61AF3B000EA826 /* ViewController.m */,
-				04713F191D61AF4E000EA826 /* TAFullScreenViewController.h */,
-				04713F1A1D61AF4E000EA826 /* TAFullScreenViewController.m */,
-				04713F201D61B010000EA826 /* SZTwoActionSheetView.h */,
-				04713F211D61B010000EA826 /* SZTwoActionSheetView.m */,
-				04713F1B1D61AF4E000EA826 /* ZoomScaleScrollView.h */,
-				04713F1C1D61AF4E000EA826 /* ZoomScaleScrollView.m */,
-				04713F231D61B049000EA826 /* CustomAlertView.h */,
-				04713F241D61B049000EA826 /* CustomAlertView.m */,
 				049059331D62C12800DD9DEE /* ImageViewController.h */,
 				049059341D62C12800DD9DEE /* ImageViewController.m */,
-				049059351D62C12800DD9DEE /* UIColor+HTMLColors.h */,
-				049059361D62C12800DD9DEE /* UIColor+HTMLColors.m */,
-				04713F2F1D61B5A6000EA826 /* 003.jpg */,
-				04713F301D61B5A6000EA826 /* 101.jpg */,
-				04713F311D61B5A6000EA826 /* 102.jpg */,
-				04713F321D61B5A6000EA826 /* 808.jpg */,
 				04713EEF1D61AF3B000EA826 /* Main.storyboard */,
 				04713EF21D61AF3B000EA826 /* Assets.xcassets */,
 				04713EF41D61AF3B000EA826 /* LaunchScreen.storyboard */,
@@ -182,6 +178,38 @@
 				04713F0D1D61AF3B000EA826 /* Info.plist */,
 			);
 			path = ShowImageViewsUITests;
+			sourceTree = "<group>";
+		};
+		7B717F441D70095E00B70F14 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				7B717F451D70095E00B70F14 /* 003.jpg */,
+				7B717F461D70095E00B70F14 /* 101.jpg */,
+				7B717F471D70095E00B70F14 /* 102.jpg */,
+				7B717F481D70095E00B70F14 /* 808.jpg */,
+				7B717F491D70095E00B70F14 /* back@2x.png */,
+				7B717F4A1D70095E00B70F14 /* back@3x.png */,
+				7B717F4B1D70095E00B70F14 /* delete@2x.png */,
+				7B717F4C1D70095E00B70F14 /* delete@3x.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		7B717F551D7009C100B70F14 /* ImageBrower */ = {
+			isa = PBXGroup;
+			children = (
+				7B717F561D7009C100B70F14 /* CustomAlertView.h */,
+				7B717F571D7009C100B70F14 /* CustomAlertView.m */,
+				7B717F661D700CBD00B70F14 /* CustomActionSheetView.h */,
+				7B717F671D700CBD00B70F14 /* CustomActionSheetView.m */,
+				7B717F5A1D7009C100B70F14 /* TAFullScreenViewController.h */,
+				7B717F5B1D7009C100B70F14 /* TAFullScreenViewController.m */,
+				7B717F5C1D7009C100B70F14 /* UIColor+HTMLColors.h */,
+				7B717F5D1D7009C100B70F14 /* UIColor+HTMLColors.m */,
+				7B717F5E1D7009C100B70F14 /* ZoomScaleScrollView.h */,
+				7B717F5F1D7009C100B70F14 /* ZoomScaleScrollView.m */,
+			);
+			path = ImageBrower;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,13 +315,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04713F341D61B5A6000EA826 /* 101.jpg in Resources */,
+				7B717F541D70095E00B70F14 /* delete@3x.png in Resources */,
+				7B717F521D70095E00B70F14 /* back@3x.png in Resources */,
+				7B717F4D1D70095E00B70F14 /* 003.jpg in Resources */,
 				04713EF61D61AF3B000EA826 /* LaunchScreen.storyboard in Resources */,
-				04713F331D61B5A6000EA826 /* 003.jpg in Resources */,
-				04713F351D61B5A6000EA826 /* 102.jpg in Resources */,
+				7B717F511D70095E00B70F14 /* back@2x.png in Resources */,
+				7B717F501D70095E00B70F14 /* 808.jpg in Resources */,
 				04713EF31D61AF3B000EA826 /* Assets.xcassets in Resources */,
+				7B717F4E1D70095E00B70F14 /* 101.jpg in Resources */,
 				04713EF11D61AF3B000EA826 /* Main.storyboard in Resources */,
-				04713F361D61B5A6000EA826 /* 808.jpg in Resources */,
+				7B717F531D70095E00B70F14 /* delete@2x.png in Resources */,
+				7B717F4F1D70095E00B70F14 /* 102.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,15 +350,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04713F221D61B010000EA826 /* SZTwoActionSheetView.m in Sources */,
+				7B717F621D7009C100B70F14 /* TAFullScreenViewController.m in Sources */,
+				7B717F641D7009C100B70F14 /* ZoomScaleScrollView.m in Sources */,
 				04713EEE1D61AF3B000EA826 /* ViewController.m in Sources */,
+				7B717F631D7009C100B70F14 /* UIColor+HTMLColors.m in Sources */,
 				049059371D62C12800DD9DEE /* ImageViewController.m in Sources */,
 				04713EEB1D61AF3A000EA826 /* AppDelegate.m in Sources */,
-				04713F1E1D61AF4E000EA826 /* ZoomScaleScrollView.m in Sources */,
-				04713F1D1D61AF4E000EA826 /* TAFullScreenViewController.m in Sources */,
-				04713F251D61B049000EA826 /* CustomAlertView.m in Sources */,
-				049059381D62C12800DD9DEE /* UIColor+HTMLColors.m in Sources */,
+				7B717F601D7009C100B70F14 /* CustomAlertView.m in Sources */,
 				04713EE81D61AF3A000EA826 /* main.m in Sources */,
+				7B717F681D700CBD00B70F14 /* CustomActionSheetView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,12 +497,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: wang xiangyun (W64982YP7P)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ShowImageViews/PrefixHeader.pch";
 				INFOPLIST_FILE = ShowImageViews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.servyou.ShowImageViews;
+				PRODUCT_BUNDLE_IDENTIFIER = com.servyou.ProfitProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c6a8e9f3-0990-4622-807a-6ea36b0f8595";
 			};
 			name = Debug;
 		};
@@ -478,12 +513,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: wang xiangyun (W64982YP7P)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ShowImageViews/PrefixHeader.pch";
 				INFOPLIST_FILE = ShowImageViews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.servyou.ShowImageViews;
+				PRODUCT_BUNDLE_IDENTIFIER = com.servyou.ProfitProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c6a8e9f3-0990-4622-807a-6ea36b0f8595";
 			};
 			name = Release;
 		};

@@ -7,7 +7,7 @@
 //
 
 #import "ZoomScaleScrollView.h"
-#import "SZTwoActionSheetView.h"
+#import "CustomActionSheetView.h"
 #import "CustomAlertView.h"
 
 @interface ZoomScaleScrollView ()<UIScrollViewDelegate>
@@ -52,6 +52,51 @@
         [self.imgView addGestureRecognizer:pressGes];
     }
 }
+
+
+- (void)setImageUrl:(NSString *)imageUrl
+{
+    _imageUrl = imageUrl;
+    [self displayImageWithUrl];
+}
+
+- (void)displayImageWithUrl
+{
+    self.maximumZoomScale = 1;
+    self.minimumZoomScale = 1;
+    self.zoomScale = 1;
+    self.contentSize = CGSizeMake(0, 0);
+    [self reSetImageWithUrl:_imageUrl];
+    
+}
+
+-(void)reSetImageWithUrl:(NSString *)imgUrl
+{
+    
+    UIImage *image = [UIImage imageNamed:@"003.jpg"];
+    [self reSetImage:image];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        
+        
+        NSData *data =[[NSData alloc]initWithContentsOfURL:[NSURL URLWithString:imgUrl]];
+        UIImage *img =[UIImage imageWithData:data];
+        if (!img)
+        {
+            img =[UIImage imageNamed:@"003.jpg"];
+        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            self.maximumZoomScale = 1;
+            self.minimumZoomScale = 1;
+            self.zoomScale = 1;
+            self.contentSize = CGSizeMake(0, 0);
+            
+            [self reSetImage:img];
+        });
+    });
+}
+
 -(void)displayImage
 {
     // Reset
@@ -166,11 +211,11 @@
 - (void)tapImage:(UILongPressGestureRecognizer *)gesture
 {
     if ([gesture state] ==  UIGestureRecognizerStateBegan) {
-        SZTwoActionSheetView *actionSheet = [[SZTwoActionSheetView alloc]initWithNumber:2];
+        CustomActionSheetView *actionSheet = [[CustomActionSheetView alloc]initWithNumber:2];
         [actionSheet setButtonTitle:@"保存图片" otherButtonTitle:@"取消"];
         __weak typeof(self) weakSelf = self;
         actionSheet.didSelectFirstBlock = ^{[weakSelf savePic:gesture];};
-        [actionSheet showInView:self];
+        [actionSheet show];
     }
     else if ([gesture state]==UIGestureRecognizerStateEnded){
         
