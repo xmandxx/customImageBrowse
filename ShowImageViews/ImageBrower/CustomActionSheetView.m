@@ -1,22 +1,22 @@
 //
-//  HSWYCustomActionSheetView.m
-//  HSWY
+//  CustomActionSheetView.m
+//  ShowImageViews
 //
-//  Created by hu on 15/8/26.
-//  Copyright (c) 2015年 Sevryou. All rights reserved.
+//  Created by jeffery on 16/8/26.
+//  Copyright © 2016年 MAC. All rights reserved.
 //
 
-#import "SZTwoActionSheetView.h"
+#import "CustomActionSheetView.h"
 
 
 #define WINDOW_COLOR [UIColor colorWithRed:0 green:0 blue:0 alpha:0.4]
 #define ANIMATE_DURATION                        0.3f
 #define ACTIONSHEET_BACKGROUNDCOLOR             [UIColor lightGrayColor]
 #define ButtonHeight                            44
-#define PCIphoneDeviceWidth     [UIScreen mainScreen].bounds.size.width
-#define PCIphoneDeviceHeight    [UIScreen mainScreen].bounds.size.height
+#define CustomDeviceWidth     [UIScreen mainScreen].bounds.size.width
+#define CustomDeviceHeight    [UIScreen mainScreen].bounds.size.height
 
-@interface SZTwoActionSheetView()
+@interface CustomActionSheetView()
 
 @property (strong,nonatomic)UIButton *cameraButton;
 @property (strong,nonatomic)UIButton *photographButton;
@@ -26,42 +26,11 @@
 
 @end
 
-@implementation SZTwoActionSheetView
-
-
--(instancetype)initWithHeight:(float)height{
-    self=[super init];
-    if (self) {
-        self.number = 3;
-        self.frame = CGRectMake(0, 0, PCIphoneDeviceWidth, PCIphoneDeviceHeight);
-        self.backgroundColor = WINDOW_COLOR;
-        
-        
-        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tappedCancel)];
-        [self addGestureRecognizer:tapGesture];
-        
-        
-        self.backgroundaView = [[UIView alloc] initWithFrame:CGRectMake(0, PCIphoneDeviceHeight, PCIphoneDeviceWidth, height)];
-        self.backgroundaView.backgroundColor = ACTIONSHEET_BACKGROUNDCOLOR;
-
-        [self addSubview:self.backgroundaView];
-        
-        [self.backgroundaView addSubview:self.cameraButton];
-        [self.backgroundaView addSubview:self.photographButton];
-        [self.backgroundaView addSubview:self.cancelButton];
-
-        
-        [UIView animateWithDuration:ANIMATE_DURATION animations:^{
-            [self.backgroundaView setFrame:CGRectMake(0, PCIphoneDeviceHeight-height, PCIphoneDeviceWidth, height)];
-        } completion:^(BOOL finished) {
-        }];
-    }
-    return self;
-}
+@implementation CustomActionSheetView
 
 -(instancetype)initWithNumber:(NSInteger)number{
     if (self = [super init]) {
-        self.frame = CGRectMake(0, 0, PCIphoneDeviceWidth, PCIphoneDeviceHeight);
+        self.frame = CGRectMake(0, 0, CustomDeviceWidth, CustomDeviceHeight);
         self.backgroundColor = WINDOW_COLOR;
         
         self.number =number;
@@ -69,7 +38,7 @@
         [self addGestureRecognizer:tapGesture];
         
         
-        self.backgroundaView = [[UIView alloc] initWithFrame:CGRectMake(0, PCIphoneDeviceHeight, PCIphoneDeviceWidth, number*ButtonHeight)];
+        self.backgroundaView = [[UIView alloc] initWithFrame:CGRectMake(0, CustomDeviceHeight, CustomDeviceWidth, number*ButtonHeight)];
         self.backgroundaView.backgroundColor = ACTIONSHEET_BACKGROUNDCOLOR;
         
         [self addSubview:self.backgroundaView];
@@ -84,14 +53,14 @@
             [self.backgroundaView addSubview:self.cancelButton];
         }
         
-    
+        
         
         
         [UIView animateWithDuration:ANIMATE_DURATION animations:^{
-            [self.backgroundaView setFrame:CGRectMake(0, PCIphoneDeviceHeight-ButtonHeight*number, PCIphoneDeviceWidth, ButtonHeight*number)];
+            [self.backgroundaView setFrame:CGRectMake(0, CustomDeviceHeight-ButtonHeight*number, CustomDeviceWidth, ButtonHeight*number)];
         } completion:^(BOOL finished) {
         }];
-
+        
     }
     return self;
 }
@@ -99,7 +68,7 @@
 
 -(UIButton*)cameraButton{
     if (!_cameraButton) {
-        _cameraButton=[[UIButton alloc]initWithFrame:CGRectMake(0, 0, PCIphoneDeviceWidth, ButtonHeight)];
+        _cameraButton=[[UIButton alloc]initWithFrame:CGRectMake(0, 0, CustomDeviceWidth, ButtonHeight)];
         _cameraButton.titleLabel.font=[UIFont systemFontOfSize:16];
         _cameraButton.titleLabel.textAlignment=NSTextAlignmentCenter;
         _cameraButton.backgroundColor=[UIColor whiteColor];
@@ -113,7 +82,7 @@
 
 -(UIButton*)photographButton{
     if (!_photographButton) {
-        _photographButton=[[UIButton alloc]initWithFrame:CGRectMake(0, ButtonHeight+1, PCIphoneDeviceWidth, ButtonHeight)];
+        _photographButton=[[UIButton alloc]initWithFrame:CGRectMake(0, ButtonHeight+1, CustomDeviceWidth, ButtonHeight)];
         _photographButton.titleLabel.font=[UIFont systemFontOfSize:16];
         _photographButton.titleLabel.textAlignment=NSTextAlignmentCenter;
         _photographButton.backgroundColor=[UIColor whiteColor];
@@ -127,13 +96,13 @@
 -(UIButton*)cancelButton{
     if (!_cancelButton) {
         if (self.number == 3) {
-            _cancelButton=[[UIButton alloc]initWithFrame:CGRectMake(0, ButtonHeight*2+6, PCIphoneDeviceWidth, ButtonHeight)];
- 
+            _cancelButton=[[UIButton alloc]initWithFrame:CGRectMake(0, ButtonHeight*2+6, CustomDeviceWidth, ButtonHeight)];
+            
         }
         else
         {
-            _cancelButton=[[UIButton alloc]initWithFrame:CGRectMake(0, ButtonHeight+1, PCIphoneDeviceWidth, ButtonHeight)];
- 
+            _cancelButton=[[UIButton alloc]initWithFrame:CGRectMake(0, ButtonHeight+1, CustomDeviceWidth, ButtonHeight)];
+            
         }
         _cancelButton.titleLabel.font=[UIFont systemFontOfSize:16];
         _cancelButton.titleLabel.textAlignment=NSTextAlignmentCenter;
@@ -163,7 +132,7 @@
 - (void)tappedCancel
 {
     [UIView animateWithDuration:0.3 animations:^{
-        [self.backgroundaView setFrame:CGRectMake(0, PCIphoneDeviceHeight, PCIphoneDeviceWidth, 0)];
+        [self.backgroundaView setFrame:CGRectMake(0, CustomDeviceHeight, CustomDeviceWidth, 0)];
         self.alpha = 0;
     } completion:^(BOOL finished) {
         if (finished) {
@@ -172,44 +141,8 @@
     }];
 }
 
--(void)showInView:(UIView *)view{
-//    [[self getCurrentVC].view addSubview:self];
-    [view addSubview:self];
+-(void)show{
+    [[UIApplication sharedApplication].keyWindow addSubview:self];
 }
-
-
-- (UIViewController *)getCurrentVC
-{
-    UIViewController *result = nil;
-    UIWindow * window = [[UIApplication sharedApplication] keyWindow];
-    if (window.windowLevel != UIWindowLevelNormal)
-    {
-        NSArray *windows = [[UIApplication sharedApplication] windows];
-        for(UIWindow * tmpWin in windows)
-        {
-            if (tmpWin.windowLevel == UIWindowLevelNormal)
-            {
-                window = tmpWin;
-                break;
-            }
-        }
-    }
-    UIView *frontView = [[window subviews] objectAtIndex:0];
-    id nextResponder = [frontView nextResponder];
-    if ([nextResponder isKindOfClass:[UIViewController class]]){
-        result = nextResponder;
-    }else{
-        result = window.rootViewController;
-    }
-    return result;
-}
-
-
-
-
-
-
-
-
 
 @end

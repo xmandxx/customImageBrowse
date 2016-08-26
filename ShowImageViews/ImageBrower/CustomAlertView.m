@@ -7,10 +7,10 @@
 //
 
 #import "CustomAlertView.h"
+#import "UIColor+HTMLColors.h"
 
-
-#define PCIphoneDeviceWidth     [UIScreen mainScreen].bounds.size.width
-#define PCIphoneDeviceHeight    [UIScreen mainScreen].bounds.size.height
+#define CustomDeviceWidth     [UIScreen mainScreen].bounds.size.width
+#define CustomDeviceHeight    [UIScreen mainScreen].bounds.size.height
 #define UnitedBackgroundColor [UIColor colorWithHexString:@"#F2F2F2"]
 #define WINDOW_COLOR [UIColor colorWithRed:0 green:0 blue:0 alpha:0.4]
 #define ANIMATE_DURATION                        0.3f
@@ -52,7 +52,7 @@ static CGFloat buttonBetweenEdge = 15;
 
 - (instancetype)initWithMessage:(NSString *)message cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitles:(NSArray *)otherButtons onCancel:(CancelButtonTouchedBlock)cancelled onDismiss:(OtherButtonTouchedBlock)dismissed {
     if (self=[super init]) {
-        self.frame = CGRectMake(0, 0, PCIphoneDeviceWidth, PCIphoneDeviceHeight);
+        self.frame = CGRectMake(0, 0, CustomDeviceWidth, CustomDeviceHeight);
         self.backgroundColor = WINDOW_COLOR;
         self.alpha = 0;
         
@@ -81,15 +81,15 @@ static CGFloat buttonBetweenEdge = 15;
     }
     UILabel *messageLabel = [[UILabel alloc]init];
     messageLabel.numberOfLines = 0;
-    CGSize labelSize = [self getLabelSize:message withFloat:textFont WithLabelWidth:PCIphoneDeviceWidth-2*(labelLeftEdge+backViewLeftEdge)];
+    CGSize labelSize = [self getLabelSize:message withFloat:textFont WithLabelWidth:CustomDeviceWidth-2*(labelLeftEdge+backViewLeftEdge)];
     messageLabel.font = [UIFont systemFontOfSize:textFont];
-    messageLabel.frame = CGRectMake(labelLeftEdge,labelTopEdge, PCIphoneDeviceWidth-2*(labelLeftEdge+backViewLeftEdge), labelSize.height);
+    messageLabel.frame = CGRectMake(labelLeftEdge,labelTopEdge, CustomDeviceWidth-2*(labelLeftEdge+backViewLeftEdge), labelSize.height);
     messageLabel.textColor = [UIColor colorWithHexString:@"#333333"];
     messageLabel.textAlignment=NSTextAlignmentCenter;
     messageLabel.text = message;
     [self.backgroundView addSubview:messageLabel];
     
-    UIView *seperatorLine = [[UIView alloc]initWithFrame:CGRectMake(labelLeftEdge, messageLabel.frame.origin.y+messageLabel.frame.size.height+labelBottomEdge, PCIphoneDeviceWidth-2*(labelLeftEdge+backViewLeftEdge), 1)];
+    UIView *seperatorLine = [[UIView alloc]initWithFrame:CGRectMake(labelLeftEdge, messageLabel.frame.origin.y+messageLabel.frame.size.height+labelBottomEdge, CustomDeviceWidth-2*(labelLeftEdge+backViewLeftEdge), 1)];
     seperatorLine.backgroundColor = [UIColor colorWithHexString:@"#cccccc"];
     [self.backgroundView addSubview:seperatorLine];
     
@@ -99,11 +99,11 @@ static CGFloat buttonBetweenEdge = 15;
     
     if (otherButtonTitles.count == 0) //一个取消按钮
     {
-        self.cancelButton.frame =CGRectMake(labelLeftEdge, seperatorLine.frame.size.height+seperatorLine.frame.origin.y+buttonTopEdge, PCIphoneDeviceWidth-backViewLeftEdge*2-2*labelLeftEdge, buttonHeight);
+        self.cancelButton.frame =CGRectMake(labelLeftEdge, seperatorLine.frame.size.height+seperatorLine.frame.origin.y+buttonTopEdge, CustomDeviceWidth-backViewLeftEdge*2-2*labelLeftEdge, buttonHeight);
     }
     else if (otherButtonTitles.count == 1) //一个取消按钮+一个其他按钮
     {
-        CGFloat realButtonWidth =(PCIphoneDeviceWidth-2*(labelLeftEdge+backViewLeftEdge)-buttonLeftEdge)/2;
+        CGFloat realButtonWidth =(CustomDeviceWidth-2*(labelLeftEdge+backViewLeftEdge)-buttonLeftEdge)/2;
         
         self.cancelButton.frame = CGRectMake(labelLeftEdge, buttonTopEdge+seperatorLine.frame.size.height+seperatorLine.frame.origin.y, realButtonWidth, buttonHeight);
         
@@ -119,8 +119,8 @@ static CGFloat buttonBetweenEdge = 15;
         
 
         for (int i = 0; i<otherButtonTitles.count; i++) {
-            UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(labelLeftEdge,orginY+(buttonBetweenEdge+buttonHeight)*i, PCIphoneDeviceWidth-backViewLeftEdge*2-2*labelLeftEdge, buttonHeight)];
-            UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(labelLeftEdge, button.frame.origin.y+button.frame.size.height+buttonBetweenEdge/2, PCIphoneDeviceWidth-backViewLeftEdge*2-2*labelLeftEdge, 1)];
+            UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(labelLeftEdge,orginY+(buttonBetweenEdge+buttonHeight)*i, CustomDeviceWidth-backViewLeftEdge*2-2*labelLeftEdge, buttonHeight)];
+            UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(labelLeftEdge, button.frame.origin.y+button.frame.size.height+buttonBetweenEdge/2, CustomDeviceWidth-backViewLeftEdge*2-2*labelLeftEdge, 1)];
             label.backgroundColor = UnitedBackgroundColor;
             
             [button setTitle:[otherButtonTitles objectAtIndex:i] forState:UIControlStateNormal];
@@ -130,16 +130,16 @@ static CGFloat buttonBetweenEdge = 15;
             [self.backgroundView addSubview:label];
 
         }
-        self.cancelButton.frame = CGRectMake(labelLeftEdge, orginY+otherButtonTitles.count*(buttonHeight+buttonBetweenEdge), PCIphoneDeviceWidth-backViewLeftEdge*2-2*labelLeftEdge, buttonHeight);
+        self.cancelButton.frame = CGRectMake(labelLeftEdge, orginY+otherButtonTitles.count*(buttonHeight+buttonBetweenEdge), CustomDeviceWidth-backViewLeftEdge*2-2*labelLeftEdge, buttonHeight);
 
     }
     
     if (otherButtonTitles.count>=2) //如果大于2个按钮
     {
-        self.backgroundView.frame = CGRectMake(0, 0, PCIphoneDeviceWidth - backViewLeftEdge*2, labelTopEdge+labelSize.height+labelBottomEdge+buttonHeight*(otherButtonTitles.count+1)+(otherButtonTitles.count)*buttonBetweenEdge+2*buttonTopEdge);
+        self.backgroundView.frame = CGRectMake(0, 0, CustomDeviceWidth - backViewLeftEdge*2, labelTopEdge+labelSize.height+labelBottomEdge+buttonHeight*(otherButtonTitles.count+1)+(otherButtonTitles.count)*buttonBetweenEdge+2*buttonTopEdge);
     }
     else{
-        self.backgroundView.frame  = CGRectMake(0, 0, PCIphoneDeviceWidth - backViewLeftEdge*2, labelTopEdge+labelSize.height+labelBottomEdge+buttonHeight+2*buttonTopEdge);
+        self.backgroundView.frame  = CGRectMake(0, 0, CustomDeviceWidth - backViewLeftEdge*2, labelTopEdge+labelSize.height+labelBottomEdge+buttonHeight+2*buttonTopEdge);
     }
     
     _cancelButton.layer.borderWidth = 1;

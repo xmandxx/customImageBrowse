@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "87B88ADC36E296CB176907150CD61ABD348F54B9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8B41C7F47EF121DD2371EC5E1E915916A6780CEC" : 0,
+    "87B88ADC36E296CB176907150CD61ABD348F54B9" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EEE861AB-5213-40DE-82A9-A561B7442838",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8B41C7F47EF121DD2371EC5E1E915916A6780CEC" : "",
+    "87B88ADC36E296CB176907150CD61ABD348F54B9" : "%E5%9B%BE%E7%89%87%E6%B5%8F%E8%A7%88%E5%99%A8\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ShowImageViews",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ShowImageViews.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mynameissujie\/customImageBrowse.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "87B88ADC36E296CB176907150CD61ABD348F54B9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mynameissujie\/customImageBrowse.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8B41C7F47EF121DD2371EC5E1E915916A6780CEC"
+    }
+  ]
+}

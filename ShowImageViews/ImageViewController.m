@@ -7,7 +7,7 @@
 //
 
 #import "ImageViewController.h"
-#import "TAFullScreenViewController.h"
+#import "FullImageBrowseViewController.h"
 
 @interface ImageViewController ()
 
@@ -40,8 +40,10 @@
     [self.imageItems addObject:image4];
     
     
-    TAFullScreenViewController *vc = [[TAFullScreenViewController alloc]init];
-    vc.thumbArray = self.imageItems;
+    FullImageBrowseViewController *vc = [[FullImageBrowseViewController alloc]init];
+//    vc.thumbArray = self.imageItems;
+    NSArray *array =@[@"http://img.taopic.com/uploads/allimg/130203/240422-1302030S62917.jpg",@"http://picm.photophoto.cn/005/008/017/0080170433.jpg",@"http://img.taopic.com/uploads/allimg/130203/240422-1302030S62917.jpg",@"http://pic26.nipic.com/20121222/9252150_193141295302_2.jpg"];
+        vc.imageUrlArray = [NSMutableArray arrayWithArray:array];
     vc.canDeleteImage =YES;
     vc.canBeDownload = YES;
     [self.navigationController pushViewController:vc animated:YES];
@@ -53,14 +55,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
